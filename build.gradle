@@ -8,6 +8,12 @@
  */
 
 /*
+// Apply the sonarqube plugin
+
+plugins {
+  id "org.sonarqube" version "2.6"
+}
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -65,7 +71,4 @@ task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
 
-plugins {
-  id "org.sonarqube" version "2.6"
-}
 // end::wrapper[]
